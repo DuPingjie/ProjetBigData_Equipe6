@@ -1,4 +1,4 @@
-# projetBigDataEquipe6
+# ProjetBigDataEquipe6
 ·DU Pingjie
 ·YANG Di
 ·EZZAGH Hicham
