@@ -21,6 +21,12 @@ Install the required Python3 packages :
 
   tous le code python sont déjà commenté
   
+## Storage
+
+- The result file - predict.csv is in storage/src/main/resources/  
+
+- Run main.java the file predict.csv will be imported in local MongoDB.
+
 ## Cloud
 
 - Postion of files
