@@ -20,7 +20,7 @@ public class MongoDB {
 			// Connect to database
 			this.mongoDatabase = mongoClient.getDatabase(db_name);
 			System.out.println("Connect to database successfully");
-			mongoDatabase.createCollection("data");
+			mongoDatabase.createCollection("predict");
 			System.out.println("Collection data is created!");
 			
 		} 
