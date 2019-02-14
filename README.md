@@ -22,14 +22,21 @@ Install the required Python3 packages :
   tous le code python sont déjà commenté
   
 ## Cloud
+
 - Postion of files
 
   "PBD_worker.csv" and "my_private_rsa_key.bin" is on the VM in the cloud.
+  
   "PBD_client.py" and "my_rsa_public.pem" is in the local computer.
+  
   "projetML.py" is the code of the machine-learning part.
+  
   "crypto.py" is used for create the private key and the public key.
+  
 
 - Implementation process
 
   Firstly, run "python3 PBD_worker.py" on the VM in the cloud.
+  
   Then, run "python3 PBD_client.py" on the local computer.It will encrypt the "dataset.csv" and automatically upload the "dataset.csv" to the cloud and download the "predict.csv" from the cloud.
+  
