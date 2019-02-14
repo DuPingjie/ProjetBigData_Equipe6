@@ -11,12 +11,23 @@ Equipe : Hicham Ezzagh - Pingjie Du - Di Yang
 
 - Update the pip3 tool :
 
-  sudo pip3 install --upgrade pip --proxy=https://cache.univ-st-etienne.fr:3128
+  sudo pip3 install --upgrade pip 
 Install the required Python3 packages :
-
-  sudo pip3 install --upgrade ipython numpy pandas seaborn matplotlib scipy scikit-learn jupyter --proxy=https://cache.univ-st-etienne.fr:3128
+  pip3 install boto3
+  sudo pip3 install --upgrade ipython numpy pandas seaborn matplotlib scipy scikit-learn 
 - Install TK for Python 3 (used by Matplotlib) :
 
   sudo apt install python3-tk
 
   tous le code python sont déjà commenté
+  
+## Cloud
+The scripts run in the environment of python3.
+"PBD_worker.csv" and "my_private_rsa_key.bin" is on the VM in the cloud.
+"PBD_client.py" and "my_rsa_public.pem" is in the local computer.
+"projetML.py" is the code of the machine-learning part.
+"crypto.py" is used for create the private key and the public key.
+
+Firstly, run "python3 PBD_worker.py" on the VM in the cloud.
+
+Then, run "python3 PBD_client.py" on the local computer.It will encrypt the "dataset.csv" and automatically upload the "dataset.csv" to the cloud and download the "predict.csv" from the cloud.
