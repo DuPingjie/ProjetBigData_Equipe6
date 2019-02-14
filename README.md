@@ -26,7 +26,7 @@ Equipe : Hicham Ezzagh - Pingjie Du - Di Yang
 
     sudo apt install python3-tk
 
-  - All codes python are commented.
+- All codes python are commented.
   
 ## Storage
 
