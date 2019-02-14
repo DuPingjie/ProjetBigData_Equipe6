@@ -11,7 +11,7 @@ public class test extends TestCase {
      public void testMain() {
 
 		try {
-			DataReader dr = new DataReader ("src/main/resources/dataset.csv");
+			DataReader dr = new DataReader ("src/main/resources/predict.csv");// or the dadaset.csv for testing the original data
 			dr.insertToMongo(300000);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
