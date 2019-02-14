@@ -7,19 +7,26 @@ Equipe : Hicham Ezzagh - Pingjie Du - Di Yang
 - We have realised a data analysis with Machine Learning and Cloud Computing service (AWS) on Python3.
 - We also used MongoDB service for the local storage.(Java with API mongodb-driver and javacsv).
 
-## Installation 
+## Machine Learning
 
-- Update the pip3 tool :
+- The code Python for the algorithms machine learning.
 
-  sudo pip3 install --upgrade pip 
-Install the required Python3 packages :
-  pip3 install boto3
-  sudo pip3 install --upgrade ipython numpy pandas seaborn matplotlib scipy scikit-learn 
-- Install TK for Python 3 (used by Matplotlib) :
+- If you haven't install the tools:
 
-  sudo apt install python3-tk
+- - Update the pip3 tool :
 
-  tous le code python sont déjà commenté
+    sudo pip3 install --upgrade pip 
+    
+- - Install the required Python3 packages :
+
+    pip3 install boto3
+    sudo pip3 install --upgrade ipython numpy pandas seaborn matplotlib scipy scikit-learn 
+    
+- - Install TK for Python 3 (used by Matplotlib) :
+
+    sudo apt install python3-tk
+
+  - All codes python are commented.
   
 ## Storage
 
