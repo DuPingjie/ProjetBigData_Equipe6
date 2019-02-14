@@ -27,23 +27,23 @@ public class DataReader {
 			String[] head = r.getHeaders(); //get heads
 			System.out.println(head.length);
 
-	        MongoDB mongo=new MongoDB("dataset");
-	        MongoCollection<Document> data = mongo.mongoDatabase.getCollection("data");
+	        MongoDB mongo=new MongoDB("dataset");// database name : dataset
+	        MongoCollection<Document> data = mongo.mongoDatabase.getCollection("data");// collection name : data
 	       
 	        int j=0;
-	        while (r.readRecord() && j<row)
+	        while (r.readRecord() && j<row) // for every line of data
 	        {
-	        	Document document=new Document();
+	        	Document document=new Document();// create a document for a line in dataset
 	            for (int i = 0; i < head.length; i++)
 	            {
-	            	if(r.get(head[i])!="") {
+	            	if(r.get(head[i])!="") {// if the  column is now for this line, we don't record it
 	            	
-						document.append(head[i], r.get(head[i]));
+						document.append(head[i], r.get(head[i]));// add the information of this line in the document
 		               // System.out.println(head[i] + ":" + r.get(head[i]));
 	            	}
 	            }
             j++;
-            data.insertOne(document);
+            data.insertOne(document);// insert this document into the collection "data"
             System.out.println(document);           
 	        }    
 	        r.close();    
