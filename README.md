@@ -1,13 +1,13 @@
-## TSE-INFO2-Projet-BigData
+# TSE-INFO2-Projet-BigData
 
 Equipe : Hicham Ezzagh - Pingjie Du - Di Yang
 
-# Introduction
+## Introduction
 
 - We have realised a data analysis with Machine Learning and Cloud Computing service (AWS) on Python3.
 - We also used MongoDB service for the local storage.(Java with API mongodb-driver and javacsv).
 
-# Installation 
+## Installation 
 
 - Update the pip3 tool :
 
