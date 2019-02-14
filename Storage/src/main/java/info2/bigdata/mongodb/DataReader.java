@@ -28,7 +28,7 @@ public class DataReader {
 			System.out.println(head.length);
 
 	        MongoDB mongo=new MongoDB("dataset");// database name : dataset
-	        MongoCollection<Document> data = mongo.mongoDatabase.getCollection("data");// collection name : data
+	        MongoCollection<Document> data = mongo.mongoDatabase.getCollection("predict");// collection name : data
 	       
 	        int j=0;
 	        while (r.readRecord() && j<row) // for every line of data
@@ -43,7 +43,7 @@ public class DataReader {
 	            	}
 	            }
             j++;
-            data.insertOne(document);// insert this document into the collection "data"
+            data.insertOne(document);// insert this document into the collection "predict"
             System.out.println(document);           
 	        }    
 	        r.close();    
